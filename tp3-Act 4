@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int numero = 11; // Variable del numero 11
+	cout << "Estre programa muestra los primeros 25 multiplos de 11" << endl; // Presentacion
+	cout << endl; // Separacion
+	while(numero < 276) // Mientras que el numero sea menor a 11
+	{
+		cout << numero << ", "; // Muestra el numero en pantalla
+		numero = numero + 11; // Una vez el ciclo pase al numero se le sumara 11
+	}
+}
