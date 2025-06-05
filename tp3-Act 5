@@ -1,0 +1,30 @@
+#include <iostream> // Solicitar biblioteca
+using namespace std;
+
+int main()
+{
+    int pares = 0; // Variable de pares
+    int inpares = 0; // Variable de inpares
+    int numero_ingresado; // Variable del numero ingresado
+    int operacion = 0;
+    cout << "Este programa dice si los 5 numeros ingresados son par o inpar"; // Presentacion
+    cout << endl << endl; // Separacion
+    while(operacion < 5)
+    {
+        cout << "Ingrese el numero: "; // Pedirle al usuario que ingrese el numero
+        cin >> numero_ingresado; // Dato del numero ingresado guardado
+        cout << endl; // Separacion
+        operacion = operacion + 1;
+        if(numero_ingresado % 2 == 1); // Si el numero es inpar
+        {
+            inpares = inpares + 1;
+        }
+        if(numero_ingresado % 2 == 0) // Si el numero es par
+        {
+            pares = pares + 1;
+        }
+    }
+    inpares = inpares - pares;
+    cout << "La cantidad de numeros pares ingresados es de: " << pares << endl; // Cantidad de numeros pares
+    cout << "La cantidad de numeros inpares es de: " << inpares; // Cantidad de numeros inpares
+}
