@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int numero1;
+	int cantidad = 1;
+	
+	cout << "Este programa divide un numero entero por 2 hasta que sea menor a 0,01" << endl;
+	cout << endl;
+	cout << "Ingrese el numero: ";
+	cin >> numero1;
+	cout << endl;
+		
+	while(numero1 >= 0.02)
+	{
+		numero1 = numero1 / 2;
+		cantidad = cantidad + 1;
+	}
+	cout <<"El numero que puso se dividio por 2 un total de " << cantidad << " vez o veces";
+	
+	return 0;
+}
