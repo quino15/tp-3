@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int aprobados = 0;
+	int desaprobados = 0;
+	int cantidad = 1;
+	float nota;
+	
+	cout << "Este programa indica la cantidad de aprobados y desaprobados que hay mediante su nota unicamente 10 veces" << endl;
+	cout << endl;
+	
+	while(cantidad <= 10)
+	{
+		cout << "Ingrese la nota: ";
+		cin >> nota;
+		cout << endl;
+		cantidad = cantidad + 1;
+		if(nota >= 10.01)
+		{
+			cout << "La nota no puede ser mayor a 10, el programa se volvera a iniciar";
+			cout << endl << endl;
+			return main();
+		}
+		if(nota >= 7)
+		{
+			aprobados = aprobados + 1;
+		}
+		else if(nota < 7)
+		{
+			desaprobados = desaprobados + 1;
+		}
+	}
+	cout << "La cantidad de aprobados es de: " << aprobados << endl;
+	cout << "La cantidad de desaprobados es de: " << desaprobados << endl; 
+}
