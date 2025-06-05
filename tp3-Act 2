@@ -1,0 +1,39 @@
+#include <iostream> // Solicitar biblioteca
+using namespace std;
+
+int main()
+{
+	int cantidad = 1; // Variable de cantidad
+	float suma_total;
+	float promedio;
+	float numero;
+	float maximo = 0;
+	float minimo = 10000000;
+	
+	cout << "Este programa muestra la suma de 10 numeros y su promedio" << endl;
+	cout << endl;
+		
+	while(cantidad <= 10)
+	{
+		cout << "Ingrese el numero: ";
+		cin >> numero;
+		cout << endl;
+		cantidad = cantidad + 1;
+		suma_total = suma_total + numero;
+		if(maximo < numero)
+		{
+			maximo = numero;
+		}
+		if(minimo > numero)
+		{
+			minimo = numero;
+		}
+	} 
+	promedio = suma_total / 10;
+	cout << "La suma total de los 10 numeros es de: " << suma_total << endl;
+	cout << "El valor maximo es de: " << maximo << endl;
+	cout << "El valor minimo es de: " << minimo << endl;
+	cout << "El promedio de los 10 numeros es de: " << promedio;
+	
+	return 0;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
