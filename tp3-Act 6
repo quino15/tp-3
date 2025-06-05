@@ -1,0 +1,18 @@
+#include <iostream> // solicitar biblioteca
+using namespace std;
+
+int main()
+{
+	int numero = 2; // Variable del numero 2
+	int suma_total = -100; // Variable de la suma total
+	cout << "Estre programa muestra la secuencia de numeros pares desde el 2 hasta el 100" << endl; // Presentacion
+	cout << endl; // Separacion
+	while(numero < 101) // Mientras que el numero sea menor a 101
+	{
+		cout << numero << ", "; // Muestra el numero en pantalla
+		numero = numero + 2; // Una vez el ciclo pase al numero se le sumara 2
+		suma_total = suma_total + numero; // Suma de los numeros pares
+	}
+	cout << endl << endl; // Separacion
+	cout << "La suma total de los digitos es: " << suma_total; // Suma total de los numeros en pantalla
+}
