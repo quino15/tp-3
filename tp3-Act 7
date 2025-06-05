@@ -1,0 +1,30 @@
+#include <iostream> // solicitar biblioteca
+using namespace std;
+
+int main()
+{
+	int numero = 1; // Variable del numero 2
+	int suma_total = -300; // Variable de la suma total
+	int pares = 0; // Variable de la cantidad de pares
+	int inpares = 0; // Variable de la cantidad de pares
+	cout << "Este programa muestra la secuencia de numeros pares desde el 2 hasta el 100" << endl; // Presentacion
+	cout << endl; // Separacion
+	while(numero < 301) // Mientras que el numero sea menor a 101
+	{
+		cout << numero << ", "; // Muestra el numero en pantalla
+		numero = numero + 1; // Una vez el ciclo pase al numero se le sumara 2
+		suma_total = suma_total + numero; // Suma de los numeros pares
+		if(numero % 2 == 0) // Si el numero dividido entre 2 el resultado final da 0
+		{
+			pares = pares + 1;
+		}
+		else if(numero % 2 == 1) // Si el resultado final no da 0 o da 1
+		{
+			inpares = inpares + 1;
+		}
+	}
+	cout << endl << endl; // Separacion
+	cout << "La suma total de los digitos es: " << suma_total << endl; // Suma total de los numeros en pantalla
+	cout << "Hay un total de: " << pares << " numeros pares" << endl;
+	cout << "Hay un total de: " << inpares << " numeros impares" << endl;
+}
