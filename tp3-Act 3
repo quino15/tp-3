@@ -1,23 +1,23 @@
-#include <iostream>
+#include <iostream> // Solicitar biblioteca
 using namespace std;
 
 int main()
 {
-	int numero1;
-	int cantidad = 1;
+	int numero1; // Variable del numero
+	int cantidad = 1; // Variable de la cantidad de veces divididas
 	
-	cout << "Este programa divide un numero entero por 2 hasta que sea menor a 0,01" << endl;
-	cout << endl;
-	cout << "Ingrese el numero: ";
-	cin >> numero1;
-	cout << endl;
+	cout << "Este programa divide un numero entero por 2 hasta que sea menor a 0,01" << endl; // Presentacion
+	cout << endl; // Separacion
+	cout << "Ingrese el numero: "; // Pedirle al usuario que ingrese el numero
+	cin >> numero1; // Datos del numero guardado en variable
+	cout << endl; // Separacion
 		
-	while(numero1 >= 0.02)
+	while(numero1 >= 0.01) // Mientras el numero ingresado sea mayor a 0,01
 	{
-		numero1 = numero1 / 2;
-		cantidad = cantidad + 1;
+		numero1 = numero1 / 2; // El numero se divide en 2
+		cantidad = cantidad + 1; // Suma 1 vez a la variable de cuantas veces se repitio la division
 	}
-	cout <<"El numero que puso se dividio por 2 un total de " << cantidad << " vez o veces";
+	cout <<"El numero que puso se dividio por 2 un total de " << cantidad << " vez o veces"; // Muestra cuantas veces se dividio el numero
 	
 	return 0;
 }
